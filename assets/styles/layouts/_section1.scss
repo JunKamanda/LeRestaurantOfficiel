@@ -1,7 +1,67 @@
-section{
+#section1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .left_part{
+        background: #e2e2e265;
+        .left{
+            margin: 10px;
+            padding: 20px 10px;
+            border: 2px dashed $orange1;
+            text-align: center;
+
+            h3{
+                font-size: 1.5rem;
+                line-height: 14px;
+            }
+            #discover{
+                color: $orange1;
+                font-family: $font3;
+            }
+            #store{
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-family: $font2;
+            }
+            .fourche{
+                margin: 20px 0;
+
+                img{
+                    width: 20px;
+                }
+            }
+            .para{
+                p{
+                    font-size: .9rem;
+                }
+            }
+            .hero_content{
+                .hero{
+                    margin: 20px 0 10px;
+
+                    img{
+                        width: 70px;
+                        border-radius: 50%;
+                    }
+
+                }
+                p{
+                    font-family: $font2;
+                    font-size: .9rem;
+                    line-height: 15px;
+                }
+                span{
+                    color: $grey1;
+                    text-transform: uppercase;
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
     .right_part{
         div{
-            
+            height: 100%;
+            background: url(../img/store-01.jpg) center/cover;
         }
     }
 }

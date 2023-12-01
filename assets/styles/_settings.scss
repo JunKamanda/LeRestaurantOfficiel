@@ -16,13 +16,26 @@ $font2: Poppins;
 $font3: Allure;
 
 $grey1: #c9c9c9;
-$white1: #f1f1f1;
-$orange1: #834111;
-$black1: #000;
+$white1: #fff;
+$orange1: #8B593A;
+$black1: #161616ee;
 $black2: #0e0505e8;
 
 *{
     margin: 0;
     padding: 0;
-    font-family: $font2;
+    font-family: $font1;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a, a:visited{
+    text-decoration: none;
+    color: $grey1;
+}
+@mixin diflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
