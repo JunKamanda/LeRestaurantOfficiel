@@ -1,0 +1,146 @@
+#section3{
+    background: $black1;
+    padding: 40px 70px;
+
+    .resevation_content{
+        background: $grey1;
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 30% 70%;
+        align-items: center;
+
+        .content{
+            background: #000;
+            color: $grey1;
+            text-align: center;
+
+            .left_side{
+                margin: 20px;
+                padding: 20px 10px;
+                border: 1px dashed $grey1;
+
+                h3{
+                    color: $orange1;
+                    font-size: 1.5rem;
+                    line-height: 14px;
+                }
+                .time{
+                    font-family: $font3;
+                    letter-spacing: 2px;
+                    font-weight: 500;
+                }
+                .open{
+                    font-family: $font2;
+                    color: $white1;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+                .img{
+                    margin: 20px 0;
+                    img{
+                        width: 25px;
+                    }
+                }
+                .day_reservation{
+                    h4{
+                        color: $orange1;
+                        text-transform: uppercase;
+                        font-size: .9rem;
+                        font-family: $font2;
+                        font-weight: 700;
+                    }
+                    .top, .bottom{
+                        margin-bottom: 20px;
+
+                        p{
+                            font-size: .8rem;
+                            margin: 10px 0 20px;
+                        }
+                    }
+                    
+                    .tel{
+                        padding: 20px 0 10px;
+                        p{
+                            font-size: 1rem;
+
+                            a{
+                                color: $orange1;
+                                font-weight: 800;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .right_side{
+            text-align: center;
+            padding: 0 40px;
+
+            h3{
+                font-size: 1.5rem;
+                line-height: 25px;
+
+                .reservation{
+                    font-family: $font3;
+                    color: $orange1;
+                    font-size: 2rem;
+                    letter-spacing: 2px;
+                    font-weight: 500;
+                }
+                .booking{
+                    font-family: $font2;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color: $black1;
+                }
+            }
+            .img{
+                margin: 20px 0;
+                img{
+                    width: 20px;
+                }
+            }
+            form{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 10px;
+                
+                select, input{
+                    border: none;
+                    border-bottom: 1px solid #00000052;
+                    padding: 10px 2px;
+                    font-weight: bold;
+                    outline: none;
+                    background: transparent;
+                    width: 100%;
+                }
+            }
+            #btn{
+                  padding: 10px 30px;  
+                  border-radius: 20px;
+                  font-weight: 900;
+                  font-family: $font2;
+                  letter-spacing: 2px;
+                  border: none;
+                  background: $black1;
+                  color: $grey1;
+                  margin: 20px;
+                  cursor: pointer;
+                  transition: .4s ease-in-out;
+
+                  &:hover{
+                    color: $black1;
+                    background: $grey1;
+                    
+                  }
+            }
+        }
+    }
+
+
+}
