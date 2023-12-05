@@ -1,0 +1,67 @@
+#section5{
+    background: $black1;
+
+    .top{
+        padding: 0px 70px;
+        position: relative;
+        top: 100px;
+        height: 240px;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        .top_content{
+            background: $grey1;
+            max-width: 1000px;
+            width: 100%;
+            color: #000000a1;
+            padding: 0 40px 20px;
+            height: 100%;
+
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .img{
+                width: 70px;
+                margin: 0 auto;
+                position: relative;
+                top: 0%;
+                left: 0%;
+                transform: translate(-50%, -50%);
+                object-fit: cover;
+
+                img{
+                    width: 100%;
+                    border-radius: 1500px;
+                }
+            }
+            p{
+                font-size: .9rem;
+                line-height: 22px;
+                margin: 0px 0 10px;
+
+                i{
+                    color: black;
+                    position: relative;
+                    top: -5px;
+                }
+            }
+            h3{
+                font-size: .99rem;
+                cursor: pointer;
+            }
+            h4{
+                font-size: .67rem;
+                color: $orange1;
+                margin: 10px 0;
+                cursor: pointer;
+            }
+        }
+    }
+    .bottom{
+        background: url(/assets/img/gmap.jpg) center/cover;
+        height: 240px;
+    }
+}

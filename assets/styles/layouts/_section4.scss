@@ -32,13 +32,71 @@
     }
     .bottom{
         max-width: 1100px;
+        margin: 0 auto;
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 60% 38%;
         grid-template-areas: 
             "un deux"
             "trois deux"
         ;
+        justify-content: center;
         gap: 10px;
+
+        i{
+            margin-right: 3px;
+        }
+
+        .event{
+            display: flex;
+
+            .event_left{
+                width: 40%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .date{
+                    width: 70px;
+                    height: 70px;
+                    background: #1a1616;
+                    margin: 40px;
+                    color: $white1;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    p{
+                        font-size: .8rem;
+                    }
+                }
+            }
+            .event_right{
+                width: 60%;
+                padding: 15px 10px;
+                color: #000000c2;
+
+                h3{
+                    margin-left: 10px;
+                    font-size: .98rem;
+                }
+
+                p{
+                    margin: 15px 0;
+                    font-size: .7rem;
+                    color: grey;
+                }
+                h4{
+                    text-transform: uppercase;
+                    font-size: .7rem;
+                    font-weight: 700;
+                    font-family: $font2;
+                    cursor: pointer;
+                }
+                
+            }
+        }
 
         .event_content1{
             grid-area: un;
@@ -63,17 +121,15 @@
         .event_content3{
             grid-area: deux;
             background: url(/assets/img/event-03.jpg) center/cover;
-            
 
             .event_top{
                 padding-bottom: 4px;
                 
-                
                 .date{
-
                     background: #1a1616;
                     color: $white1;
-                    width: 50px;
+                    width: 70px;
+                    height: 70px;
                     margin: 0 auto;
                     padding: 10px 0;
                     
@@ -92,7 +148,7 @@
                 text-align: center;
                 width: 100%;
                 margin: 10px 25px;
-                color: #000000a1;
+                color: #000000c2;
 
                 h3{
                     font-size: .98rem;
@@ -103,64 +159,16 @@
                 p{
                     font-size: .7rem;
                     margin: 0 0 20px;
+                    color: grey;
                 }
                 h4{
                     text-transform: uppercase;
                     font-size: .7rem;
                     font-weight: 700;
                     font-family: $font2;
-
+                    cursor: pointer;
                 }
 
-            }
-        }
-        .event{
-            display: flex;
-
-            .event_left{
-                width: 40%;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .date{
-                    width: 50px;
-                    height: 50px;
-                    background: #1a1616;
-                    margin: 40px;
-                    color: $white1;
-
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-
-                    p{
-                        font-size: .8rem;
-                    }
-                }
-            }
-            .event_right{
-                width: 60%;
-                padding: 10px 5px;
-
-                color: #000000a1;
-
-                h3{
-                    margin-left: 10px;
-                    font-size: .98rem;
-                }
-
-                p{
-                    margin: 10px 0;
-                    font-size: .7rem;
-                }
-                h4{
-                    text-transform: uppercase;
-                    font-size: .7rem;
-                    font-weight: 700;
-                    font-family: $font2;
-                }
             }
         }
         

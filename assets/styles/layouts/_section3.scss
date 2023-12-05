@@ -118,6 +118,10 @@
                     outline: none;
                     background: transparent;
                     width: 100%;
+                    cursor: pointer;
+                }
+                input[type=text]{
+                    color: grey;
                 }
             }
             #btn{
@@ -131,12 +135,11 @@
                   color: $grey1;
                   margin: 20px;
                   cursor: pointer;
-                  transition: .4s ease-in-out;
+                  transition: .5s ease-in-out;
 
                   &:hover{
-                    color: $black1;
-                    background: $grey1;
-                    
+                    background: $orange1;
+                    scale: 1.1;
                   }
             }
         }
