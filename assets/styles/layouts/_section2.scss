@@ -5,21 +5,29 @@
         text-align: center;
         padding: 30px 0 130px;
 
+        @media screen  and (max-width:700px){
+           padding: 70px 0 300px; 
+        }
+
         h3{
             color: $orange1;
             font-family: $font3;
             font-size: 1.5rem;
         }
         .img{
-            margin: 20px 0;
+            margin: 25px 0 20px;
             img{
                 width: 20px;
+
+                @media screen  and (max-width:600px){
+                    width: 25px; 
+                }
             }
         }
         ul{
             max-width: 1100px;
             margin: 0 auto;
-            width: 70%;
+            width: 80%;
 
             display: flex;
             align-items: center;
@@ -70,20 +78,19 @@
     }
     .menu_section_content{
         background: url(../img/bg-menu-01.jpg) center/cover;
-        // min-height: 80vh;
         height: 400px;
         position: relative;
-
 
         .menu_section{
             border-top: 3px solid $orange1;
             background: $grey1;
             padding: 20px 10px 10px;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 49% 49%;
+            gap: 10px;
     
             max-width: 1100px;
-            width: 60%;
+            width: 80%;
             
             position: absolute;
             top: 30%;
@@ -92,40 +99,45 @@
             
             .menu_plate{
                 display: grid;
+                grid-template-columns: 1fr;
                 justify-items: start;
 
                 .plate{
-                    display: grid;
-                    grid-template-columns: 25% 70% 5%;
+                    display: flex;
                     align-items: center;
-                    border-bottom: 1px dashed rgba(128, 128, 128, 0.767);
-                    width: 93%;
-                    padding: 15px 20px;
+                    border-bottom: 1px dashed #808080c4;
+                    width: 100%;
+                    padding: 15px 4px 15px 4px;
 
                     .img{
                         cursor: pointer;
                         width: 60px;
                         height: 60px;
-                        object-fit: cover;
                         img{
                             width: 100%;
                             height: 100%;
                             border-radius: 50%;
+                            object-fit: cover;
                         }
                     }
                     .infos{
                         margin: 0 10px;
                         cursor: pointer;
+                        width: 60%;
                         h4{
                             text-transform: uppercase;
                             font-size: 12px;
                             font-weight: 800;
                         }
                         p{
-                            font-size: .7rem;
+                            font-size: .8rem;
+                        }
+                        @media screen  and (max-width:700px){
+                            margin: 0 0 0 20px;
                         }
                     }
                     .price{
+                        width: 20%;
                         p{
                             color: $orange1;
                             font-weight: bold;
@@ -135,6 +147,15 @@
                     }
                 }
             }
+            @media screen  and (max-width:700px){
+                grid-template-columns: 1fr;
+                max-width: 900px;
+                width: 70%;
+                top: 20%;
+            }
+        }
+        @media screen  and (max-width:700px){
+            height: 600px;
         }
     }
 }

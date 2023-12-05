@@ -119,9 +119,17 @@
                     background: transparent;
                     width: 100%;
                     cursor: pointer;
+
+                    @media screen  and (max-width:600px){
+                        font-size: .78rem;
+                    }
                 }
                 input[type=text]{
                     color: grey;
+                }
+                @media screen  and (max-width:600px){
+                    grid-template-columns: 1fr;
+                    padding: 0 40px;
                 }
             }
             #btn{
@@ -141,9 +149,21 @@
                     background: $orange1;
                     scale: 1.1;
                   }
+                  @media screen  and (max-width:600px){
+                    font-size: .78rem;
+                }
+            }
+            @media screen  and (max-width:770px){
+                padding: 30px 50px;
             }
         }
+        @media screen  and (max-width:770px){
+            grid-template-columns: 1fr;
+            max-width: 900px;
+            width: 100%;
+        }
     }
-
-
+    @media screen  and (max-width:770px){
+        padding: 70px 70px 30px;
+    }
 }
