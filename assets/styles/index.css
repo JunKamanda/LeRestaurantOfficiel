@@ -516,6 +516,16 @@ header .header_content p {
   color: #af5f2e;
   font-weight: 800;
 }
+@media screen and (max-width: 450px) {
+  #section3 .resevation_content .content .left_side {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  #section3 .resevation_content .content {
+    padding: 20px;
+  }
+}
 #section3 .resevation_content .right_side {
   text-align: center;
   padding: 0 40px;
@@ -531,11 +541,22 @@ header .header_content p {
   letter-spacing: 2px;
   font-weight: 500;
 }
+@media screen and (max-width: 450px) {
+  #section3 .resevation_content .right_side h3 .reservation {
+    font-size: 1.5rem;
+  }
+}
 #section3 .resevation_content .right_side h3 .booking {
   font-family: Poppins;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: rgba(22, 22, 22, 0.9333333333);
+}
+@media screen and (max-width: 450px) {
+  #section3 .resevation_content .right_side h3 {
+    font-size: 1.1rem;
+    line-height: 20px;
+  }
 }
 #section3 .resevation_content .right_side .img {
   margin: 20px 0;
@@ -572,6 +593,11 @@ header .header_content p {
     padding: 0 40px;
   }
 }
+@media screen and (max-width: 450px) {
+  #section3 .resevation_content .right_side form {
+    padding: 0;
+  }
+}
 #section3 .resevation_content .right_side #btn {
   padding: 10px 30px;
   border-radius: 20px;
@@ -581,7 +607,7 @@ header .header_content p {
   border: none;
   background: rgba(22, 22, 22, 0.9333333333);
   color: #ebebeb;
-  margin: 20px;
+  margin: 20px 0;
   cursor: pointer;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -593,6 +619,13 @@ header .header_content p {
 @media screen and (max-width: 600px) {
   #section3 .resevation_content .right_side #btn {
     font-size: 0.78rem;
+    padding: 10px 25px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #section3 .resevation_content .right_side #btn {
+    font-size: 0.7rem;
+    padding: 10px 20px;
   }
 }
 @media screen and (max-width: 770px) {
@@ -605,6 +638,11 @@ header .header_content p {
     grid-template-columns: 1fr;
     max-width: 900px;
     width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  #section3 .resevation_content {
+    display: block;
   }
 }
 @media screen and (max-width: 770px) {
@@ -861,7 +899,7 @@ header .header_content p {
 }
 @media screen and (max-width: 570px) {
   #section5 .top {
-    height: 300px;
+    height: 325px;
   }
 }
 #section5 .bottom {

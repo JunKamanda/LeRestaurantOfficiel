@@ -1,5 +1,6 @@
 #section5{
     background: $black1;
+    
 
     .top{
         padding: 0px 70px;
@@ -23,7 +24,6 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            
 
             .img{
                 position: relative;
@@ -68,7 +68,7 @@
             }
         }
         @media screen  and (max-width:570px){
-            height: 300px;
+            height: 325px;
         }
     }
     .bottom{

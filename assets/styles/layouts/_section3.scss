@@ -74,6 +74,12 @@
                         }
                     }
                 }
+                @media screen  and (max-width:450px){
+                    margin: 0;
+                }
+            }
+            @media screen  and (max-width:450px){
+                padding: 20px;
             }
         }
         
@@ -91,12 +97,20 @@
                     font-size: 2rem;
                     letter-spacing: 2px;
                     font-weight: 500;
+
+                    @media screen  and (max-width:450px){
+                        font-size: 1.5rem;
+                    }
                 }
                 .booking{
                     font-family: $font2;
                     text-transform: uppercase;
                     letter-spacing: 1px;
                     color: $black1;
+                }
+                @media screen  and (max-width:450px){
+                    font-size: 1.1rem;
+                    line-height: 20px;
                 }
             }
             .img{
@@ -131,6 +145,9 @@
                     grid-template-columns: 1fr;
                     padding: 0 40px;
                 }
+                @media screen  and (max-width:450px){
+                    padding: 0;
+                }
             }
             #btn{
                   padding: 10px 30px;  
@@ -141,7 +158,7 @@
                   border: none;
                   background: $black1;
                   color: $grey1;
-                  margin: 20px;
+                  margin: 20px 0;
                   cursor: pointer;
                   transition: .5s ease-in-out;
 
@@ -151,6 +168,11 @@
                   }
                   @media screen  and (max-width:600px){
                     font-size: .78rem;
+                    padding: 10px 25px;
+                }
+                @media screen  and (max-width:450px){
+                    font-size: .7rem;
+                    padding: 10px 20px;
                 }
             }
             @media screen  and (max-width:770px){
@@ -161,6 +183,9 @@
             grid-template-columns: 1fr;
             max-width: 900px;
             width: 100%;
+        }
+        @media screen  and (max-width:450px){
+            display: block;
         }
     }
     @media screen  and (max-width:770px){
