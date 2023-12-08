@@ -43,6 +43,7 @@
                     margin: 20px 0;
                     img{
                         width: 25px;
+                        height: 25px;
                     }
                 }
                 .day_reservation{
@@ -117,12 +118,17 @@
                 margin: 20px 0;
                 img{
                     width: 20px;
+                    height: 20px;
                 }
             }
             form{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 10px;
+
+                label{
+                    display: none;
+                }
                 
                 select, input{
                     border: none;
@@ -140,6 +146,12 @@
                 }
                 input[type=text]{
                     color: grey;
+                }
+                select{
+                    option{
+                        font-weight: 900;
+                        background: $grey1;
+                    }
                 }
                 @media screen  and (max-width:600px){
                     grid-template-columns: 1fr;

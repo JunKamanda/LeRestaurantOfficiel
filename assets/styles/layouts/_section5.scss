@@ -33,6 +33,7 @@
 
                 img{
                     width: 70px;
+                    height: 70px;
                     border-radius: 1500px;
                     object-fit: cover;
                 }
@@ -42,8 +43,7 @@
                 line-height: 20px;
                 margin: 0px 0 15px;
 
-                i{
-                    color: black;
+                svg{
                     position: relative;
                     top: -5px;
                 }

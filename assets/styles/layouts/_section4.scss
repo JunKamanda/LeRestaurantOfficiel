@@ -27,6 +27,7 @@
             margin: 20px 0;
             img{
                 width: 20px;
+                height: 20px;
             }
         }
     }
@@ -42,7 +43,7 @@
         justify-content: center;
         gap: 10px;
 
-        i{
+        svg{
             margin-right: 3px;
         }
 
@@ -144,10 +145,10 @@
             }
             .event_center{
                 background: $grey1;
-                padding: 0 20px;
+                padding: 0 5px;
                 text-align: center;
-                width: 100%;
-                margin: 10px 25px;
+                width: 80%;
+                margin: 10px auto;
                 color: #000000c2;
 
                 h3{

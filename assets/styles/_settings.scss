@@ -17,7 +17,7 @@ $font3: Allure;
 
 $grey1: #ebebeb;
 $white1: #fff;
-$orange1: #af5f2e;
+$orange1: #d86c29;
 $black1: #161616ee;
 $black2: #0e0505e8;
 
@@ -27,12 +27,43 @@ $black2: #0e0505e8;
     font-family: $font1;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+body{
+    min-height: 100vh;
+
+    &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: black;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+        animation: animBg 2s ease forwards;
+        @keyframes animBg {
+            to{
+                opacity: 0;
+                display: none;
+            }            
+        }
+    }
+}
 li{
     list-style: none;
 }
 a, a:visited{
     text-decoration: none;
     color: $grey1;
+}
+img{
+    width: auto;
+    height: auto;
 }
 @mixin diflex{
     display: flex;
