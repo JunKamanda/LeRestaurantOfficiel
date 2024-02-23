@@ -8,13 +8,14 @@ header{
         grid-template-columns: 15% 70% 15%;
         align-items: center;
         justify-items: center;
-        // max-width: 1100px;
+
         margin: 0 auto;
         color: $white1;
         padding: 5px 0;
         position: fixed;
         width: 100%;
         background: #000000f6;
+        transition: .4s ease-in-out;
         z-index: 1000;
 
         .logo{
@@ -23,6 +24,9 @@ header{
                 font-family: $font3;
                 font-size: 2rem;
                 font-weight: 700;
+            }
+            @media screen  and (max-width:600px){
+                margin: 10px 10px;
             }
         }
         nav{
@@ -59,6 +63,10 @@ header{
                     &:hover a{
                         color: $white1
                     }
+
+                    @media screen  and (max-width:600px){
+                        margin: 10px 0;
+                    }
                 }
                 .active{
                     
@@ -73,10 +81,13 @@ header{
                         transition: width .4s ease;
                     }
                 }
-            }
 
-            @media screen  and (max-width:600px){
-                display: none;  
+                @media screen  and (max-width:600px){
+                    flex-direction: column;  
+                    gap: 10px;
+
+                    margin: 40px 0;
+                }
             }
         }
         .social{
@@ -102,12 +113,61 @@ header{
                     }
                 }
             }
+            // @media screen  and (max-width:600px){
+                
+            // }
         }
 
         @media screen  and (max-width:600px){
-            grid-template-columns: 50% 50%;
+            display: none;
+            grid-template-columns: 1fr;
+            grid-template-rows: 10% 1fr 1fr;
+            top: -100%;
+            right: 0;
+            width: 100%;
+            opacity: 0;
+            transition: .4s ease-in-out;
+            animation: animeNav 2s ease-in-out forwards;
+
+            @keyframes animeNav {
+                 50%{
+                    opacity: 0.7;
+                    width: 100%;
+                    height: 100vh;
+                }
+                90%{
+                    top: 0;
+                    height: 100vh;
+                    width: 100%;
+                }
+                100%{
+                    top: 0;
+                    width: 240px;
+                    height: 100vh;
+                    opacity: 1;
+                }
+            }
         }
     }
+    .show{
+        display: block;
+    }
+    .show ~ .toggle_btn{
+        span{
+          position: absolute;
+        }
+        span:nth-child(1){
+          transform: rotate(45deg);
+        }
+        span:nth-child(2){
+          opacity: 0;
+        }
+        span:nth-child(3){
+          transform: rotate(-45deg);
+        }
+    }
+
+
     .header_content{
         max-width: 1100px;
         width: 98%;
@@ -173,6 +233,33 @@ header{
                 padding: 12px;
                 margin: 0 auto;
             }
+        }
+    }
+    .toggle_btn{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: 10px;
+        right: 24px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 100000000000000000;
+
+        span{
+            position: relative;
+            border: 1px solid white;
+            width: 40px;
+            height: 7px;
+            margin-top: 4px;
+
+            transition: .4s ease-in-out;
+        }
+
+        @media screen  and (max-width:600px){
+            display: flex;
         }
     }
 }

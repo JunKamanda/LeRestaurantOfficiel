@@ -1,367 +1,614 @@
 <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
 
-        <!-- Cdn -->
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" /> -->
+    <!-- Cdn -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" /> -->
 
-        <!-- Titles -->
-        <title>Le_Restaurant : L'excellence culinaire à votre portée.</title>
-        <meta name="description" content="Découvrez l'excellence culinaire à portée de main grâce à notre offre gastronomique de qualité supérieure. Des plats savoureux et raffinés préparés avec soin par nos chefs experts, prêts à être dégustés dans le confort de votre foyer. Laissez-vous séduire par une expérience culinaire inoubliable et éveillez vos papilles avec nos créations exceptionnelles.">
+    <!-- Titles -->
+    <title>Le_Restaurant : L'excellence culinaire à votre portée.</title>
+    <meta
+      name="description"
+      content="Découvrez l'excellence culinaire à portée de main grâce à notre offre gastronomique de qualité supérieure. Des plats savoureux et raffinés préparés avec soin par nos chefs experts, prêts à être dégustés dans le confort de votre foyer. Laissez-vous séduire par une expérience culinaire inoubliable et éveillez vos papilles avec nos créations exceptionnelles."
+    />
 
-        <!-- Open Graph -->
-        <meta property="og:title" content="Le_Restaurant" />
-        <meta property="og:description" content="Découvrez l'excellence culinaire à portée de main grâce à notre offre gastronomique de qualité supérieure. Laissez-vous séduire par une expérience culinaire inoubliable et éveillez vos papilles avec nos créations exceptionnelles." />
-        <meta property="og:image" content="./img/favicon.png" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Le_Restaurant" />
+    <meta
+      property="og:description"
+      content="Découvrez l'excellence culinaire à portée de main grâce à notre offre gastronomique de qualité supérieure. Laissez-vous séduire par une expérience culinaire inoubliable et éveillez vos papilles avec nos créations exceptionnelles."
+    />
+    <meta property="og:image" content="./img/favicon.png" />
 
-        <link rel="stylesheet" href="./assets/styles/index.css">
-    </head>
-    <body>
-        <header>
-            <div class="header_nav">
-                <div class="logo">
-                    <span><a href="#">Resto</a></span>
-                </div>
-                <nav>
-                    <ul>
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#section2">Menu</a></li>
-                        <li><a href="#section3">Reservations</a></li>
-                        <li><a href="#section5">Blog</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#section4">Shop</a></li>
-                        <li><a href="#footer">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="social">
-                    <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 320 512"><path fill="#ffffff" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></span>
-                    <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></span>
-                    <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path fill="#ffffff" d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></span>
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_nav">
+        <div class="logo">
+          <span><a href="#">Resto</a></span>
+        </div>
+        <nav>
+          <ul>
+            <li class="liste active"><a href="#">Home</a></li>
+            <li class="liste"><a href="#section2">Menu</a></li>
+            <li class="liste"><a href="#section3">Reservations</a></li>
+            <li class="liste"><a href="#section5">Blog</a></li>
+            <li class="liste"><a href="#">Pages</a></li>
+            <li class="liste"><a href="#section4">Shop</a></li>
+            <li class="liste"><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="14"
+              viewBox="0 0 320 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+              /></svg
+          ></span>
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="14"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              /></svg
+          ></span>
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="16"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
+              /></svg
+          ></span>
 
-                    <!-- <span class="facebook"><i class="fa-brands fa-facebook-f"></i></span> -->
-                    <!-- <span class="facebook"><i class="fa-brands fa-instagram"></i></span> -->
-                    <!-- <span class="facebook"><i class="fa-brands fa-twitter"></i></span> -->
-                </div>
+          <!-- <span class="facebook"><i class="fa-brands fa-facebook-f"></i></span> -->
+          <!-- <span class="facebook"><i class="fa-brands fa-instagram"></i></span> -->
+          <!-- <span class="facebook"><i class="fa-brands fa-twitter"></i></span> -->
+        </div>
+      </div>
+      <div class="toggle_btn" id="sideBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="header_content">
+        <h1>
+          <span id="welcome">Welcome to</span><br /><span id="resto"
+            >the resto</span
+          >
+        </h1>
+        <div class="img">
+          <img src="./assets/img/ic-plate-big.png" alt="mini_fourchette" />
+        </div>
+        <p>We serve only the freshest ingredients !</p>
+      </div>
+    </header>
+
+    <div class="AllContent">
+      <section id="section1">
+        <div class="left_part">
+          <div class="left">
+            <h3 id="h3Section1">
+              <span id="discover">Discover</span><br /><span id="store"
+                >Our store</span
+              >
+            </h3>
+            <div class="fourche">
+              <img src="./assets/img/ic-plate.png" alt="mini_fourchette" />
             </div>
-
-            <div class="header_content">
-                <h1><span id="welcome">Welcome to</span><br><span id="resto">the resto</span></h1>
-                <div class="img"><img src="./assets/img/ic-plate-big.png" alt="mini_fourchette"></div>
-                <p>We serve only the freshest ingredients !</p>
+            <div class="para">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis voluptate quos nobis expedita aut! Corrupti quod totam
+                aliquam dicta. Possimus?
+              </p>
             </div>
-        </header>
-
-        <section id="section1">
-            <div class="left_part">
-                <div class="left">
-                    <h3><span id="discover">Discover</span><br><span id="store">Our store</span></h3>
-                    <div class="fourche">
-                        <img src="./assets/img/ic-plate.png" alt="mini_fourchette">
-                    </div>
-                    <div class="para">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptate quos nobis expedita aut! Corrupti quod totam aliquam dicta. Possimus?</p>
-                    </div>
-                    <div class="hero_content">
-                        <div class="hero"><img src="./assets/img/avatar-01.jpg" alt="Hero"></div>
-                        <p>Russell Stephens <br><span>Chef cook</span></p>
-                    </div>
-                </div>
+            <div class="hero_content">
+              <div class="hero">
+                <img src="./assets/img/avatar-01.jpg" alt="Hero" />
+              </div>
+              <p>Russell Stephens <br /><span>Chef cook</span></p>
             </div>
-            
-            <div class="right_part">
-                <div>
-                    
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
 
-        <section id="section2">
-            <div class="choice_section">
-                <h3>Discover</h3>
+        <div class="right_part">
+          <div></div>
+        </div>
+      </section>
+
+      <section id="section2">
+        <div class="choice_section">
+          <h3 id="h3Section2">Discover</h3>
+          <div class="img">
+            <img src="./assets/img/ic-plate.png" alt="fourchette" />
+          </div>
+          <ul>
+            <li class="active">Breakfast</li>
+            <li>Lunch</li>
+            <li>Dinner</li>
+            <li>Drinks</li>
+            <li>Other</li>
+          </ul>
+        </div>
+
+        <div class="menu_section_content">
+          <div class="menu_section">
+            <div class="menu_plate">
+              <div class="plate">
                 <div class="img">
-                    <img src="./assets/img/ic-plate.png" alt="fourchette">
+                  <img src="./assets/img/dish-item-01.jpg" alt="Spaghetti" />
                 </div>
-                <ul>
-                    <li class="active">Breakfast</li>
-                    <li>Lunch</li>
-                    <li>Dinner</li>
-                    <li>Drinks</li>
-                    <li>Other</li>
-                </ul>
+                <div class="infos">
+                  <h4>Italian Source Mushroom</h4>
+                  <p>Mushroom / Garlic / Veggies</p>
+                </div>
+                <div class="price">
+                  <p>$12</p>
+                </div>
+              </div>
+              <div class="plate">
+                <div class="img">
+                  <img src="./assets/img/dish-item-03.jpg" alt="Spaghetti" />
+                </div>
+                <div class="infos">
+                  <h4>Tenu Roast Source</h4>
+                  <p>Tuna / Potatoes / Rice</p>
+                </div>
+                <div class="price">
+                  <p>$15</p>
+                </div>
+              </div>
+              <div class="plate">
+                <div class="img">
+                  <img src="./assets/img/dish-item-05.jpg" alt="Spaghetti" />
+                </div>
+                <div class="infos">
+                  <h4>Salted Fried Chicken</h4>
+                  <p>Chicken / Olive Oli / Salt</p>
+                </div>
+                <div class="price">
+                  <p>$20</p>
+                </div>
+              </div>
+              <div class="plate">
+                <div class="img">
+                  <img src="./assets/img/dish-item-07.jpg" alt="Spaghetti" />
+                </div>
+                <div class="infos">
+                  <h4>Imported Slamon Steak</h4>
+                  <p>Salmon / Veggies / Oil</p>
+                </div>
+                <div class="price">
+                  <p>$16</p>
+                </div>
+              </div>
             </div>
 
-            <div class="menu_section_content">
-                <div class="menu_section">
-                    <div class="menu_plate">
-                        <div class="plate">
-                            <div class="img">
-                                <img src="./assets/img/dish-item-01.jpg" alt="Spaghetti">
-                            </div>
-                            <div class="infos">
-                                <h4>Italian Source Mushroom</h4>
-                                <p>Mushroom / Garlic / Veggies</p>
-                            </div>
-                            <div class="price">
-                                <p>$12</p>
-                            </div>
-                        </div>
-                        <div class="plate">
-                            <div class="img">
-                                <img src="./assets/img/dish-item-03.jpg" alt="Spaghetti">
-                            </div>
-                            <div class="infos">
-                                <h4>Tenu Roast Source</h4>
-                                <p>Tuna / Potatoes / Rice</p>
-                            </div>
-                            <div class="price">
-                                <p>$15</p>
-                            </div>
-                        </div>
-                        <div class="plate">
-                            <div class="img">
-                                <img src="./assets/img/dish-item-05.jpg" alt="Spaghetti">
-                            </div>
-                            <div class="infos">
-                                <h4>Salted Fried Chicken</h4>
-                                <p>Chicken / Olive Oli / Salt</p>
-                            </div>
-                            <div class="price">
-                                <p>$20</p>
-                            </div>
-                        </div>
-                        <div class="plate">
-                            <div class="img">
-                                <img src="./assets/img/dish-item-07.jpg" alt="Spaghetti">
-                            </div>
-                            <div class="infos">
-                                <h4>Imported Slamon Steak</h4>
-                                <p>Salmon / Veggies / Oil</p>
-                            </div>
-                            <div class="price">
-                                <p>$16</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="menu_plate">
-                        <div class="plate">
-                            <div class="img">
-                                <img src="./assets/img/dish-item-02.jpg" alt="Spaghetti">
-                            </div>
-                            <div class="infos">
-                                <h4>Fried Potatoes with Garlic</h4>
-                                <p>Potatoes / Olive Oil / Garlic</p>
-                            </div>
-                            <div class="price">
-                                <p>$22</p>
-                            </div>
-                        </div>
-                        <div class="plate">
-                            <div class="img">
-                                <img src="./assets/img/dish-item-04.jpg" alt="Spaghetti">
-                            </div>
-                            <div class="infos">
-                                <h4>Roast Pork (4 Sticks)</h4>
-                                <p>Pork / Veggies / shoyu</p>
-                            </div>
-                            <div class="price">
-                                <p>$18</p>
-                            </div>
-                        </div>
-                        <div class="plate">
-                            <div class="img">
-                                <img src="./assets/img/dish-item-06.jpg" alt="Spaghetti">
-                            </div>
-                            <div class="infos">
-                                <h4>Crab With Curry Sources</h4>
-                                <p>Crab / Potatoes / Rice</p>
-                            </div>
-                            <div class="price">
-                                <p>$14</p>
-                            </div>
-                        </div>
-                        <div class="plate">
-                            <div class="img">
-                                <img src="./assets/img/dish-item-08.jpg" alt="Spaghetti">
-                            </div>
-                            <div class="infos">
-                                <h4>Baked Potato Pizza</h4>
-                                <p>Potato / Bread / Cheese</p>
-                            </div>
-                            <div class="price">
-                                <p>$25</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="menu_plate">
+              <div class="plate">
+                <div class="img">
+                  <img src="./assets/img/dish-item-02.jpg" alt="Spaghetti" />
                 </div>
+                <div class="infos">
+                  <h4>Fried Potatoes with Garlic</h4>
+                  <p>Potatoes / Olive Oil / Garlic</p>
+                </div>
+                <div class="price">
+                  <p>$22</p>
+                </div>
+              </div>
+              <div class="plate">
+                <div class="img">
+                  <img src="./assets/img/dish-item-04.jpg" alt="Spaghetti" />
+                </div>
+                <div class="infos">
+                  <h4>Roast Pork (4 Sticks)</h4>
+                  <p>Pork / Veggies / shoyu</p>
+                </div>
+                <div class="price">
+                  <p>$18</p>
+                </div>
+              </div>
+              <div class="plate">
+                <div class="img">
+                  <img src="./assets/img/dish-item-06.jpg" alt="Spaghetti" />
+                </div>
+                <div class="infos">
+                  <h4>Crab With Curry Sources</h4>
+                  <p>Crab / Potatoes / Rice</p>
+                </div>
+                <div class="price">
+                  <p>$14</p>
+                </div>
+              </div>
+              <div class="plate">
+                <div class="img">
+                  <img src="./assets/img/dish-item-08.jpg" alt="Spaghetti" />
+                </div>
+                <div class="infos">
+                  <h4>Baked Potato Pizza</h4>
+                  <p>Potato / Bread / Cheese</p>
+                </div>
+                <div class="price">
+                  <p>$25</p>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="section3">
-            <div class="resevation_content">
-                <div class="content">
-                    <div class="left_side">
-                        <h3><span class="time">Time</span><br><span class="open">Open</span></h3>
-                        <div class="img">
-                            <img src="./assets/img/ic-plate.png" alt="mini_fourchette">
-                        </div>
-                        <div class="day_reservation">
-                            <div class="top">
-                                <h4>Monday - Friday</h4>
-                                <p>7AM - 11AM(Breakfast) <br>11AM - 10PM(Lunch/Dinner)</p>
-                            </div>
-                            <div class="bottom">
-                                <h4>Saturday / Sunday</h4>
-                                <p>8AM - 1pm(Brunch) <br>1PM - 9PM(Lunch/Dinner)</p>
-                            </div>
-                            <div class="tel">
-                                <p><a href="tel:+243 973913544">+243 973913544</a></p>
-                            </div>
-                        </div>
-                    </div>
+      <section id="section3">
+        <div class="resevation_content">
+          <div class="content">
+            <div class="left_side">
+              <h3 id="h3Section3">
+                <span class="time">Time</span><br /><span class="open"
+                  >Open</span
+                >
+              </h3>
+              <div class="img">
+                <img src="./assets/img/ic-plate.png" alt="mini_fourchette" />
+              </div>
+              <div class="day_reservation">
+                <div class="top">
+                  <h4>Monday - Friday</h4>
+                  <p>7AM - 11AM(Breakfast) <br />11AM - 10PM(Lunch/Dinner)</p>
                 </div>
-                
-
-                <div class="right_side">
-                    <h3><span class="reservation">Reservation</span><br><span class="booking">Online booking</span></h3>
-                    <div class="img">
-                        <img src="./assets/img/ic-plate.png" alt="mini_fourchette">
-                    </div>
-
-                    <form action="#">
-                        <label for="people">people</label>
-                        <select name="people" id="people">
-                            <option value="people">People</option>
-                            <option value="sigle">Sigle</option>
-                            <option value="maried">Maried</option>
-                            <option value="familly">Familly</option>
-                            <option value="five">5 Persons</option>
-                            <option value="ten">10 Persons</option>
-                            <option value="vip">VIP réservation</option>
-                        </select>
-
-                        <label for="day">day</label>
-                        <input type="date" name="day" id="day"  autocomplete="off" value="27/07/2000">
-
-                        <label for="temps">temps</label>
-                        <input type="time" name="temps" id="temps" autocomplete="off">
-
-                        <label for="nom">nom</label>
-                        <input type="text" name="nom" id="nom" placeholder="Name" autocomplete="off">
-
-                        <label for="phone">phone</label>
-                        <input type="tel" name="phone" id="phone" placeholder="Phone" autocomplete="off">
-
-                        <label for="mail">mail</label>
-                        <input type="mail" name="mail" id="mail" placeholder="Email" autocomplete="off">
-
-                    </form>
-
-                    <input type="submit" value="BOOK NOW" id="btn">
-
+                <div class="bottom">
+                  <h4>Saturday / Sunday</h4>
+                  <p>8AM - 1pm(Brunch) <br />1PM - 9PM(Lunch/Dinner)</p>
                 </div>
+                <div class="tel">
+                  <p><a href="tel:+243 973913544">+243 973913544</a></p>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <section id="section4">
-            <div class="top">
-                <h3><span class="coming">Upcoming</span><br><span class="event">Our event</span></h3>
-                    <div class="img">
-                        <img src="./assets/img/ic-plate.png" alt="mini_fourchette">
-                    </div>
+          <div class="right_side">
+            <h3 id="h3Section3">
+              <span class="reservation">Reservation</span><br /><span
+                class="booking"
+                >Online booking</span
+              >
+            </h3>
+            <div class="img">
+              <img src="./assets/img/ic-plate.png" alt="mini_fourchette" />
             </div>
 
-            <div class="bottom">
-                <div class="event_content1 event">
-                    <div class="event_left">
-                        <div class="date">
-                            <h3>08</h3>
-                            <p>July</p>
-                        </div>
-                    </div>
-                    <div class="event_right">
-                        <h3>Night Inspirescu Party</h3>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10" viewBox="0 0 384 512"><path fill="grey" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>Restaurant Resto <svg xmlns="http://www.w3.org/2000/svg" height="13" width="13" viewBox="0 0 512 512"><path fill="grey" d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>10:00pm - 6:00am</p>
-                        <h4>Buy Tickets</h4>
-                    </div>
-                </div>
+            <form action="#">
+              <label for="people">people</label>
+              <select name="people" id="people">
+                <option value="people">People</option>
+                <option value="sigle">Sigle</option>
+                <option value="maried">Maried</option>
+                <option value="familly">Familly</option>
+                <option value="five">5 Persons</option>
+                <option value="ten">10 Persons</option>
+                <option value="vip">VIP réservation</option>
+              </select>
 
-                <div class="event_content2 event">
-                    <div class="event_left">
-                        <div class="date">
-                            <h3>08</h3>
-                            <p>July</p>
-                        </div>
-                    </div>
-                    <div class="event_right">
-                        <h3>DJ RobagRuhme</h3>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10" viewBox="0 0 384 512"><path fill="grey" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>Restaurant Resto <svg xmlns="http://www.w3.org/2000/svg" height="13" width="13" viewBox="0 0 512 512"><path fill="grey" d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>10:00pm - 6:00am</p>
-                        <h4>Buy Tickets</h4>
-                    </div>
-                </div>
+              <label for="day">day</label>
+              <input
+                type="date"
+                name="day"
+                id="day"
+                autocomplete="off"
+                value="26-6-2000"
+              />
 
-                <div class="event_content3 event">
-                    
-                    <div class="event_center">
-                        <div class="event_top">
-                            <div class="date">
-                                <h3>08</h3>
-                                <p>July</p>
-                            </div>
-                        </div>
-                        <h3>Thousands celebrities at Johnnie Night</h3>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" height="14" width="10" viewBox="0 0 384 512"><path fill="grey" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>Restaurant Resto <svg xmlns="http://www.w3.org/2000/svg" height="13" width="13" viewBox="0 0 512 512"><path fill="grey" d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>10:00pm - 6:00am</p>
-                        <h4>Buy Tickets</h4>
-                    </div>
-                </div>
+              <label for="temps">temps</label>
+              <input type="time" name="temps" id="temps" autocomplete="off" />
+
+              <label for="nom">nom</label>
+              <input
+                type="text"
+                name="nom"
+                id="nom"
+                placeholder="Name"
+                autocomplete="off"
+              />
+
+              <label for="phone">phone</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Phone"
+                autocomplete="off"
+              />
+
+              <label for="mail">mail</label>
+              <input
+                type="mail"
+                name="mail"
+                id="mail"
+                placeholder="Email"
+                autocomplete="off"
+              />
+            </form>
+
+            <input type="submit" value="BOOK NOW" id="btn" />
+          </div>
+        </div>
+      </section>
+
+      <section id="section4">
+        <div class="top">
+          <h3 id="h3Section4">
+            <span class="coming">Upcoming</span><br /><span class="event"
+              >Our event</span
+            >
+          </h3>
+          <div class="img">
+            <img src="./assets/img/ic-plate.png" alt="mini_fourchette" />
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="event_content1 event">
+            <div class="event_left">
+              <div class="date">
+                <h3>08</h3>
+                <p>July</p>
+              </div>
             </div>
-        </section>
+            <div class="event_right">
+              <h3>Night Inspirescu Party</h3>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="14"
+                  width="10"
+                  viewBox="0 0 384 512"
+                >
+                  <path
+                    fill="grey"
+                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+                  /></svg
+                >Restaurant Resto
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="13"
+                  width="13"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="grey"
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                  /></svg
+                >10:00pm - 6:00am
+              </p>
+              <h4>Buy Tickets</h4>
+            </div>
+          </div>
 
-        <section id="section5">
-            <div class="top">
-                <div class="top_content">
-                    <div class="img">
-                        <img src="/assets/img/avatar-02.jpg" alt="cuisinière">
-                    </div>
-                    <p><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path fill="grey" d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"/></svg> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, aliquid assumenda rem, inventore unde veritatis optio, beatae deserunt cupiditate veniam dignissimos itaque omnis expedita magnam. Eligendi debitis nobis nostrum id, in molestias dolore odit praesentium iusto ut doloremque itaque impedit? <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path fill="grey" d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z"/></svg></p>
-                    <h3>Russel Stepehns</h3>
-                    <h4>CEO - HeadPassion</h4>
+          <div class="event_content2 event">
+            <div class="event_left">
+              <div class="date">
+                <h3>08</h3>
+                <p>July</p>
+              </div>
+            </div>
+            <div class="event_right">
+              <h3>DJ RobagRuhme</h3>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="14"
+                  width="10"
+                  viewBox="0 0 384 512"
+                >
+                  <path
+                    fill="grey"
+                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+                  /></svg
+                >Restaurant Resto
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="13"
+                  width="13"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="grey"
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                  /></svg
+                >10:00pm - 6:00am
+              </p>
+              <h4>Buy Tickets</h4>
+            </div>
+          </div>
+
+          <div class="event_content3 event">
+            <div class="event_center">
+              <div class="event_top">
+                <div class="date">
+                  <h3>08</h3>
+                  <p>July</p>
                 </div>
+              </div>
+              <h3>Thousands celebrities at Johnnie Night</h3>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="14"
+                  width="10"
+                  viewBox="0 0 384 512"
+                >
+                  <path
+                    fill="grey"
+                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+                  /></svg
+                >Restaurant Resto
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="13"
+                  width="13"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="grey"
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                  /></svg
+                >10:00pm - 6:00am
+              </p>
+              <h4>Buy Tickets</h4>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="bottom"></div>
-        </section>
-
-        <footer id="section6">
-            <div class="left">
-                <h3>Resto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nemo soluta iste nihil similique molestias optio, repellendus ipsa consequatur placeat.</p>
+      <section id="section5">
+        <div class="top">
+          <div class="top_content">
+            <div class="img">
+              <img src="/assets/img/avatar-02.jpg" alt="cuisinière" />
             </div>
-            <div class="right">
-                <h3>Newsletter</h3>
-                <input type="text" placeholder="Your email address" autocomplete="on" name="inputfooter" id="inputfooter">
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="14"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="grey"
+                  d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"
+                />
+              </svg>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed,
+              aliquid assumenda rem, inventore unde veritatis optio, beatae
+              deserunt cupiditate veniam dignissimos itaque omnis expedita
+              magnam. Eligendi debitis nobis nostrum id, in molestias dolore
+              odit praesentium iusto ut doloremque itaque impedit?
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="14"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="grey"
+                  d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z"
+                />
+              </svg>
+            </p>
+            <h3>Russel Stepehns</h3>
+            <h4>CEO - HeadPassion</h4>
+          </div>
+        </div>
 
-                <div class="social">
-                    <h3>Follow Us:</h3>
+        <div class="bottom"></div>
+      </section>
 
-                    <div class="social_media">
-                        <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 320 512"><path fill="grey" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></span>
-                        <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path fill="grey" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></span>
-                        <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path fill="grey" d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></span>
-                        <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><path fill="grey" d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"/></svg></span>
+      <footer id="section6">
+        <div class="left">
+          <h3>Resto</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            nemo soluta iste nihil similique molestias optio, repellendus ipsa
+            consequatur placeat.
+          </p>
+        </div>
+        <div class="right">
+          <h3>Newsletter</h3>
+          <input
+            type="text"
+            placeholder="Your email address"
+            autocomplete="on"
+            name="inputfooter"
+            id="inputfooter"
+          />
 
+          <div class="social">
+            <h3>Follow Us:</h3>
 
-                        <!-- <span class="facebook"><i class="fa-brands fa-facebook-f"></i></span>
+            <div class="social_media">
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="14"
+                  viewBox="0 0 320 512"
+                >
+                  <path
+                    fill="grey"
+                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                  /></svg
+              ></span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="14"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="grey"
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  /></svg
+              ></span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="16"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="grey"
+                    d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
+                  /></svg
+              ></span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="12"
+                  viewBox="0 0 384 512"
+                >
+                  <path
+                    fill="grey"
+                    d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"
+                  /></svg
+              ></span>
+
+              <!-- <span class="facebook"><i class="fa-brands fa-facebook-f"></i></span>
                         <span class="instagram"><i class="fa-brands fa-instagram"></i></span>
                         <span class="twitter"><i class="fa-brands fa-twitter"></i></span>
                         <span class="pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></span> -->
-                    </div>
-                </div>
             </div>
-        </footer>
-
-    </body>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

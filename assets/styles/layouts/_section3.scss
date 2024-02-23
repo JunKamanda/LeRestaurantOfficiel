@@ -1,206 +1,223 @@
-#section3{
-    background: $black1;
-    padding: 40px 70px;
+#section3 {
+  background: $black1;
+  padding: 40px 70px;
 
-    .resevation_content{
-        background: $grey1;
-        max-width: 1100px;
-        width: 100%;
-        margin: 0 auto;
+  h3{
+    position: relative;
+    top: 40px;
+    opacity: 0;
+    transition: .7s ease;
+  }
+  .showH3{
+    opacity: 1;
+    top: 0;
+  }
 
+  .resevation_content {
+    background: $grey1;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+
+    .content {
+      background: #000;
+      color: $grey1;
+      text-align: center;
+
+      .left_side {
+        margin: 20px;
+        padding: 20px 10px;
+        border: 1px dashed $grey1;
+
+        position: relative;
+        transition: 0.7s ease-in-out;
+
+        h3 {
+          color: $orange1;
+          font-size: 1.5rem;
+          line-height: 14px;
+        }
+        .time {
+          font-family: $font3;
+          letter-spacing: 2px;
+          font-weight: 500;
+        }
+        .open {
+          font-family: $font2;
+          color: $white1;
+          font-size: 1rem;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+        .img {
+          margin: 20px 0;
+          img {
+            width: 25px;
+            height: 25px;
+          }
+        }
+        .day_reservation {
+          h4 {
+            color: $orange1;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            font-family: $font2;
+            font-weight: 700;
+          }
+          .top,
+          .bottom {
+            margin-bottom: 20px;
+
+            p {
+              font-size: 0.8rem;
+              margin: 10px 0 20px;
+            }
+          }
+
+          .tel {
+            padding: 20px 0 10px;
+            p {
+              font-size: 1rem;
+
+              a {
+                color: $orange1;
+                font-weight: 800;
+              }
+            }
+          }
+        }
+        @media screen and (max-width: 450px) {
+          margin: 0;
+        }
+      }
+
+      @media screen and (max-width: 450px) {
+        padding: 20px;
+      }
+    }
+
+    .right_side {
+      text-align: center;
+      padding: 0 40px;
+
+      h3 {
+        font-size: 1.5rem;
+        line-height: 25px;
+
+        .reservation {
+          font-family: $font3;
+          color: $orange1;
+          font-size: 2rem;
+          letter-spacing: 2px;
+          font-weight: 500;
+
+          @media screen and (max-width: 450px) {
+            font-size: 1.5rem;
+          }
+        }
+        .booking {
+          font-family: $font2;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: $black1;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 1.1rem;
+          line-height: 20px;
+        }
+      }
+      .img {
+        margin: 20px 0;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      form {
         display: grid;
-        grid-template-columns: 30% 70%;
-        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
 
-        .content{
-            background: #000;
-            color: $grey1;
-            text-align: center;
-
-            .left_side{
-                margin: 20px;
-                padding: 20px 10px;
-                border: 1px dashed $grey1;
-
-                h3{
-                    color: $orange1;
-                    font-size: 1.5rem;
-                    line-height: 14px;
-                }
-                .time{
-                    font-family: $font3;
-                    letter-spacing: 2px;
-                    font-weight: 500;
-                }
-                .open{
-                    font-family: $font2;
-                    color: $white1;
-                    font-size: 1rem;
-                    text-transform: uppercase;
-                    letter-spacing: 2px;
-                }
-                .img{
-                    margin: 20px 0;
-                    img{
-                        width: 25px;
-                        height: 25px;
-                    }
-                }
-                .day_reservation{
-                    h4{
-                        color: $orange1;
-                        text-transform: uppercase;
-                        font-size: .9rem;
-                        font-family: $font2;
-                        font-weight: 700;
-                    }
-                    .top, .bottom{
-                        margin-bottom: 20px;
-
-                        p{
-                            font-size: .8rem;
-                            margin: 10px 0 20px;
-                        }
-                    }
-                    
-                    .tel{
-                        padding: 20px 0 10px;
-                        p{
-                            font-size: 1rem;
-
-                            a{
-                                color: $orange1;
-                                font-weight: 800;
-                            }
-                        }
-                    }
-                }
-                @media screen  and (max-width:450px){
-                    margin: 0;
-                }
-            }
-            @media screen  and (max-width:450px){
-                padding: 20px;
-            }
+        label {
+          display: none;
         }
-        
-        .right_side{
-            text-align: center;
-            padding: 0 40px;
 
-            h3{
-                font-size: 1.5rem;
-                line-height: 25px;
+        select,
+        input {
+          border: none;
+          border-bottom: 1px solid #00000052;
+          padding: 10px 2px;
+          font-weight: bold;
+          outline: none;
+          background: transparent;
+          width: 100%;
+          cursor: pointer;
 
-                .reservation{
-                    font-family: $font3;
-                    color: $orange1;
-                    font-size: 2rem;
-                    letter-spacing: 2px;
-                    font-weight: 500;
-
-                    @media screen  and (max-width:450px){
-                        font-size: 1.5rem;
-                    }
-                }
-                .booking{
-                    font-family: $font2;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                    color: $black1;
-                }
-                @media screen  and (max-width:450px){
-                    font-size: 1.1rem;
-                    line-height: 20px;
-                }
-            }
-            .img{
-                margin: 20px 0;
-                img{
-                    width: 20px;
-                    height: 20px;
-                }
-            }
-            form{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 10px;
-
-                label{
-                    display: none;
-                }
-                
-                select, input{
-                    border: none;
-                    border-bottom: 1px solid #00000052;
-                    padding: 10px 2px;
-                    font-weight: bold;
-                    outline: none;
-                    background: transparent;
-                    width: 100%;
-                    cursor: pointer;
-
-                    @media screen  and (max-width:600px){
-                        font-size: .78rem;
-                    }
-                }
-                input[type=text]{
-                    color: grey;
-                }
-                select{
-                    option{
-                        font-weight: 900;
-                        background: $grey1;
-                    }
-                }
-                @media screen  and (max-width:600px){
-                    grid-template-columns: 1fr;
-                    padding: 0 40px;
-                }
-                @media screen  and (max-width:450px){
-                    padding: 0;
-                }
-            }
-            #btn{
-                  padding: 10px 30px;  
-                  border-radius: 20px;
-                  font-weight: 900;
-                  font-family: $font2;
-                  letter-spacing: 2px;
-                  border: none;
-                  background: $black1;
-                  color: $grey1;
-                  margin: 20px 0;
-                  cursor: pointer;
-                  transition: .5s ease-in-out;
-
-                  &:hover{
-                    background: $orange1;
-                    scale: 1.1;
-                  }
-                  @media screen  and (max-width:600px){
-                    font-size: .78rem;
-                    padding: 10px 25px;
-                }
-                @media screen  and (max-width:450px){
-                    font-size: .7rem;
-                    padding: 10px 20px;
-                }
-            }
-            @media screen  and (max-width:770px){
-                padding: 30px 50px;
-            }
+          @media screen and (max-width: 600px) {
+            font-size: 0.78rem;
+          }
         }
-        @media screen  and (max-width:770px){
-            grid-template-columns: 1fr;
-            max-width: 900px;
-            width: 100%;
+        input[type="text"] {
+          color: grey;
         }
-        @media screen  and (max-width:450px){
-            display: block;
+        select {
+          option {
+            font-weight: 900;
+            background: $grey1;
+          }
         }
+        @media screen and (max-width: 600px) {
+          grid-template-columns: 1fr;
+          padding: 0 40px;
+        }
+        @media screen and (max-width: 450px) {
+          padding: 0;
+        }
+      }
+      #btn {
+        padding: 10px 30px;
+        border-radius: 20px;
+        font-weight: 900;
+        font-family: $font2;
+        letter-spacing: 2px;
+        border: none;
+        background: $black1;
+        color: $grey1;
+        margin: 20px 0;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+          background: $orange1;
+          scale: 1.1;
+        }
+        @media screen and (max-width: 600px) {
+          font-size: 0.78rem;
+          padding: 10px 25px;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 0.7rem;
+          padding: 10px 20px;
+        }
+      }
+      @media screen and (max-width: 770px) {
+        padding: 30px 50px;
+      }
     }
-    @media screen  and (max-width:770px){
-        padding: 70px 70px 30px;
+    @media screen and (max-width: 770px) {
+      grid-template-columns: 1fr;
+      max-width: 900px;
+      width: 100%;
     }
+    @media screen and (max-width: 450px) {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 770px) {
+    padding: 70px 70px 30px;
+  }
 }

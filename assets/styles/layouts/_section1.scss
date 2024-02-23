@@ -1,83 +1,91 @@
-#section1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+#section1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-    @media screen  and (max-width:600px){
-        grid-template-columns: 1fr;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+
+  .left_part {
+    background: #e2e2e265;
+    .left {
+      margin: 10px;
+      padding: 20px 10px;
+      border: 2px dashed $orange1;
+      text-align: center;
+
+      h3 {
+        font-size: 1.5rem;
+        line-height: 14px;
+
+        position: relative;
+        top: 40px;
+        opacity: 0;
+        transition: 0.4s ease;
+      }
+      .showH3{
+        top: 0;
+        opacity: 1;
+      }
+      #discover {
+        color: $orange1;
+        font-family: $font3;
+      }
+      #store {
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-family: $font2;
+      }
+      .fourche {
+        margin: 25px 0;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .para {
+        p {
+          font-size: 0.9rem;
+          @media screen and (max-width: 600px) {
+            width: 80%;
+            max-width: 500px;
+            margin: 0 auto;
+          }
+        }
+      }
+      .hero_content {
+        .hero {
+          margin: 20px 0 10px;
+
+          img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+          }
+        }
+        p {
+          font-family: $font2;
+          font-size: 0.9rem;
+          line-height: 15px;
+        }
+        span {
+          color: grey;
+          text-transform: uppercase;
+          font-size: 0.7rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .right_part {
+    div {
+      height: 100%;
+      background: url(../img/store-01.jpg) center/cover;
     }
 
-    .left_part{
-        background: #e2e2e265;
-        .left{
-            margin: 10px;
-            padding: 20px 10px;
-            border: 2px dashed $orange1;
-            text-align: center;
-
-            h3{
-                font-size: 1.5rem;
-                line-height: 14px;
-            }
-            #discover{
-                color: $orange1;
-                font-family: $font3;
-            }
-            #store{
-                text-transform: uppercase;
-                font-size: 1rem;
-                font-family: $font2;
-            }
-            .fourche{
-                margin: 25px 0;
-
-                img{
-                    width: 20px;
-                    height: 20px;
-                }
-            }
-            .para{
-                p{
-                    font-size: .9rem;
-                    @media screen  and (max-width:600px){
-                        width: 80%;
-                        max-width: 500px;
-                        margin: 0 auto;
-                    }
-                }
-            }
-            .hero_content{
-                .hero{
-                    margin: 20px 0 10px;
-
-                    img{
-                        width: 70px;
-                        height: 70px;
-                        border-radius: 50%;
-                    }
-
-                }
-                p{
-                    font-family: $font2;
-                    font-size: .9rem;
-                    line-height: 15px;
-                }
-                span{
-                    color: grey;
-                    text-transform: uppercase;
-                    font-size: .7rem;
-                    cursor: pointer;
-                }
-            }
-        }
+    @media screen and (max-width: 600px) {
+      display: none;
     }
-    .right_part{
-        div{
-            height: 100%;
-            background: url(../img/store-01.jpg) center/cover;
-        }
-
-        @media screen  and (max-width:600px){
-            display: none;  
-        }
-    }
+  }
 }

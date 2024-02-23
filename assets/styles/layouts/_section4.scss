@@ -9,6 +9,11 @@
             font-size: 1.2rem;
             line-height: 25px;
 
+            position: relative;
+            top: 40px;
+            opacity: 0;
+            transition: .4s ease;
+
             .coming{
                 font-family: $font3;
                 color: $orange1;
@@ -22,6 +27,10 @@
                 letter-spacing: 1px;
                 color: $white1;
             }
+        }
+        .showH3{
+            opacity: 1;
+            top: 0;
         }
         .img{
             margin: 20px 0;

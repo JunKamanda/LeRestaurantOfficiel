@@ -1,7 +1,6 @@
 #section5{
     background: $black1;
     
-
     .top{
         padding: 0px 70px;
         position: relative;
@@ -29,7 +28,8 @@
                 position: relative;
                 top: 0%;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, 0%);
+                transition: 2s ease-in;
 
                 img{
                     width: 70px;
@@ -38,16 +38,28 @@
                     object-fit: cover;
                 }
             }
+            .showImgSectionCinq{
+                transform: translate(-50%, -50%);
+            }
             p{
                 font-size: .9rem;
                 line-height: 20px;
                 margin: 0px 0 15px;
+
+                position: relative;
+                top: 70px;
+                opacity: 0;
+                transition: 1s ease-in;
 
                 svg{
                     position: relative;
                     top: -5px;
                 }
 
+            }
+            .showPSectionCinq{
+                opacity: 1;
+                top: 0;
             }
             h3{
                 font-size: .99rem;
